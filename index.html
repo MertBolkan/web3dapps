@@ -7,19 +7,30 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Awesome fonts -->
+    <script src="https://kit.fontawesome.com/f2fa64bd3c.js" crossorigin="anonymous"></script>
 
-    <title>Lab1</title>
+    <title>mb849's Web3D apps</title>
   </head>
   <body>
-
+<!-- Logo and Navigation bar -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
       <!-- Brand -->
       <a class="navbar-brand" href="#">Coca Cola journey</a>
     
+      <!--Collapsible Navbar Menu icon-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--Link menu item button to the Links class navbar-collapse selector-->
+  <div class="collapse navbar-collapse">
+
       <!-- Links -->
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link active" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>
@@ -35,14 +46,14 @@
           </div>
         </li>
       </ul>
+    </div>
+    </div>
     </nav>
-    <br>
+  <br>
 
     <div class="container">
-    <h1>Hello, world!</h1>
-    <p>I'm using a .container class</p>
     <div class="row">
-      <div class="col-sm-12" style="background-color: crimson;">.col-sm-12</div>
+      <div class="col-sm-12" style="background-color: crimson;">.col-sm-12 bg image here</div>
     </div>
 
     <div class="row">
@@ -51,6 +62,21 @@
       <div class="col-sm-4" style="background-color: antiquewhite;">.col-sm-4 DR PEPPER</div>
     </div>
     </div>
+    <br><!--Temporary break-->
+    <!--Footer-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container">
+        <div class="navbar-text float-left copyright">
+          <p><span class="align-baseline"></span>&copy 2019 Mobile Web 3D Applications</span></p>
+        </div>
+        <div class="navbar-text float-right social">
+          <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#"><i class="fab fa-google-plus fa-2x"></i></a>
+          <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
+        </div>
+      </div>
+    </nav>
 
     <!-- Optional JavaScript -->
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) 
