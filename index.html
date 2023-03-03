@@ -9,23 +9,32 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Awesome fonts -->
     <script src="https://kit.fontawesome.com/f2fa64bd3c.js" crossorigin="anonymous"></script>
-
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/custom.css">
     <title>mb849's Web3D apps</title>
   </head>
   <body>
 <!-- Logo and Navigation bar -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
     <div class="container">
       <!-- Brand -->
-      <a class="navbar-brand" href="#">Coca Cola journey</a>
-    
+      <div class="logo">
+        <a class="navbar-brand" href="#">
+          <h1>1</h1>
+        <h1>oca</h1>
+        <h2>Cola</h2>
+        <h3>Journey</h3>
+        <p>Refreshing the world, one story at a time</p>
+        </a>
+        </div>
+            
       <!--Collapsible Navbar Menu icon-->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <!--Link menu item button to the Links class navbar-collapse selector-->
-  <div class="collapse navbar-collapse">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
       <!-- Links -->
       <ul class="navbar-nav ml-auto">
@@ -38,7 +47,7 @@
     
         <!-- Dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Drinks</a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" aria-expanded="false">Drinks</a>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="#">Coca cola</a>
             <a class="dropdown-item" href="#">Sprite</a>
@@ -49,9 +58,8 @@
     </div>
     </div>
     </nav>
-  <br>
-<!--Main body-->
-    <div class="container">
+<!--Main contents-->
+    <div class="container main_contents">
     <div class="row"><!--Main 3d image-->
       <div class="col-sm-12">
         <div id="main_3d_image">
@@ -73,8 +81,8 @@
           </a>
           <div class="card-body">
             <h3 class="card-title">Coca Cola</h3>
-            <p class="card-text">It was 1886, in New York Harbour.John Pemberton, an Atlanta pharmacist,
-               was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, he carried it a few doors down to Jacobs' Pharmacy. Here, the mixture was combined with carbonated water and sampled by customers who all agreed this new drink was special.
+            <p class="card-text">It was 1886, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done,
+               the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special!
               </p>
             <a href="#" class="btn btn-primary">Find out more</a>
           </div>
@@ -89,7 +97,7 @@
           <div class="card-body">
             <h3 class="card-title">Sprite</h3>
             <p class="card-text">First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime flavoured soft drink and is sold in more than 190 different countries.
-              Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories. 
+               Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories.
               </p>
             <a href="#" class="btn btn-primary">Find out more</a>
           </div>
@@ -103,8 +111,8 @@
           </a>
           <div class="card-body">
             <h3 class="card-title">Dr Pepper</h3>
-            <p class="card-text">Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a century.
-              It was created by Texas pharmacist Charles Alderton in 1885. He gave a sample of the first ever batch to Wade Morrison, a local shop owner, who instantly agreed to stock the drink. The distinctive, bold taste of Dr Pepper has been popular ever since.
+            <p class="card-text">Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a century and it's still the same,
+               with that distinctive flavour you just can't quite put your tongue on. It was created by Texas pharmacist Charles Alderton in 1885.
               </p>
             <a href="#" class="btn btn-primary">Find out more</a>
           </div>
@@ -112,21 +120,21 @@
       </div>
     </div>
     </div>
-    <br><!--Temporary break-->
     <!--Footer-->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <div class="container">
-        <div class="navbar-text float-left copyright">
-          <p><span class="align-baseline"></span>&copy 2019 Mobile Web 3D Applications</span></p>
-        </div>
-        <div class="navbar-text float-right social">
-          <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-          <a href="#"><i class="fab fa-google-plus fa-2x"></i></a>
-          <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
-        </div>
+    <nav class="navbar navbar-expand-sm footer">
+      <div class="container">   
+          <div class="navbar-text float-left copyright">
+              <p><span class="align-baseline"></span>&copy Mobile Web 3D Applications </span></p>
+          </div>
+          <div class="navbar-text social">
+                <a href="#"><i class="fab fa-github-square fa-2x fa-pull-right"></i></a>
+                <a href="#"><i class="fab fa-google-plus-square fa-2x fa-pull-right"></i></a>
+                <a href="#"><i class="fab fa-twitter-square fa-2x fa-pull-right"></i></a>
+                <a href="#"><i class="fab fa-facebook-square fa-2x fa-pull-right"></i></a>
+          </div>
       </div>
-    </nav>
+  </nav> 
+
 
     <!-- Optional JavaScript -->
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) 
