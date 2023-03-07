@@ -22,12 +22,12 @@ body {
 }
 
 #main_3d_image {
-    background-image: url(../assets/images/main_3D.jpg);
+    background-image: url(../assets/images/main_3D_1400x524.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /* The div block for the main_3d_image has no vertical size, 
     so we need a height to see the background image */
-    height: 200px;
+    height: 250px;
 }
 #main_text {
             float: left;
@@ -289,7 +289,7 @@ body {
         background-color: #678c02;
         height: 60px;
     }
-    
+
     .navbar-text > a {
         font-size: 10px;
     }
@@ -314,16 +314,15 @@ body {
         background-color: #760003;
         height: 60px;
     }
-    
+
     .navbar-text > a {
         font-size: 10px;
     }
-    
+
     .navbar-text > p {
         color: rgb(214, 228, 15);
         font-size: 18px;
     }
-    
     .copyright {
         padding-top: 20px;
     }
