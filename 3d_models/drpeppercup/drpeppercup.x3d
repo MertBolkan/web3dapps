@@ -40,14 +40,7 @@
 				<Group DEF="group_ME_Circle">
 					<Shape>
 						<Appearance>
-							<Material DEF="MA_drpepper_texture"
-							          diffuseColor="0.800 0.800 0.800"
-							          specularColor="0.401 0.401 0.401"
-							          emissiveColor="0.000 0.000 0.000"
-							          ambientIntensity="0.000"
-							          shininess="0.500"
-							          transparency="0.0"
-							          />
+						<ImageTexture url="drpepper_texture.jpg"/>
 						</Appearance>
 						<IndexedFaceSet solid="false"
 						                creaseAngle="0.5236"
@@ -75,14 +68,7 @@
 					<Group DEF="group_ME_Circle_001">
 						<Shape>
 							<Appearance>
-								<Material DEF="MA_lid"
-								          diffuseColor="0.800 0.800 0.800"
-								          specularColor="0.401 0.401 0.401"
-								          emissiveColor="0.000 0.000 0.000"
-								          ambientIntensity="0.000"
-								          shininess="0.500"
-								          transparency="0.0"
-								          />
+								<Material DEF="lid"/>
 							</Appearance>
 							<IndexedFaceSet solid="false"
 							                creaseAngle="0.5236"
