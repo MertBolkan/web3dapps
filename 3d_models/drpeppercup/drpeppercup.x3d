@@ -16,9 +16,9 @@
 		            skyColor="0.051 0.051 0.051"
 		            />
 		<Transform DEF="Camera_TRANSFORM"
-		           translation="0.780276 1.940358 1.213336"
+		           translation="-0.780276 1.213336 1.940358"
 		           scale="1.000000 1.000000 1.000000"
-		           rotation="0.103875 0.552168 0.827237 2.832827"
+		           rotation="-0.720681 -0.679881 -0.135576 0.539888"
 		           >
 			<Viewpoint DEF="CA_Camera"
 			           centerOfRotation="0 0 0"
@@ -30,7 +30,7 @@
 		<Transform DEF="Cup_TRANSFORM"
 		           translation="0.000000 0.000000 0.000000"
 		           scale="0.164140 0.164140 0.168967"
-		           rotation="0.000000 0.000000 0.000000 0.000000"
+		           rotation="-0.000000 -0.707107 -0.707107 3.141593"
 		           >
 			<Transform DEF="Cup_ifs_TRANSFORM"
 			           translation="0.000000 0.000000 0.000000"
@@ -40,7 +40,7 @@
 				<Group DEF="group_ME_Circle">
 					<Shape>
 						<Appearance>
-							<Material DEF="MA_label"
+							<Material DEF="MA_drpepper_texture"
 							          diffuseColor="0.800 0.800 0.800"
 							          specularColor="0.401 0.401 0.401"
 							          emissiveColor="0.000 0.000 0.000"
@@ -100,9 +100,9 @@
 			</Transform>
 		</Transform>
 		<Transform DEF="TriLamp-Back_TRANSFORM"
-		           translation="1.963407 -3.954833 5.000000"
+		           translation="-1.963407 5.000000 -3.954833"
 		           scale="1.000000 1.000000 1.000000"
-		           rotation="0.833499 0.195514 0.516772 0.852209"
+		           rotation="-0.095996 -0.907362 -0.409242 2.722171"
 		           >
 			<DirectionalLight DEF="LA_TriLamp-Back"
 			                  ambientIntensity="0.0000"
@@ -112,9 +112,9 @@
 			                  />
 		</Transform>
 		<Transform DEF="TriLamp-Fill_TRANSFORM"
-		           translation="-2.290503 3.683884 5.000000"
+		           translation="2.290503 5.000000 3.683884"
 		           scale="1.000000 1.000000 1.000000"
-		           rotation="0.099372 -0.348021 -0.932205 2.621301"
+		           rotation="-0.823922 0.515564 0.235259 1.011560"
 		           >
 			<DirectionalLight DEF="LA_TriLamp-Fill"
 			                  ambientIntensity="0.0000"
@@ -124,9 +124,9 @@
 			                  />
 		</Transform>
 		<Transform DEF="TriLamp-Key_TRANSFORM"
-		           translation="2.737466 3.365068 5.000000"
+		           translation="-2.737466 5.000000 3.365068"
 		           scale="1.000000 1.000000 1.000000"
-		           rotation="0.123345 0.347081 0.929689 2.503393"
+		           rotation="-0.759666 -0.591629 -0.269968 1.081834"
 		           >
 			<DirectionalLight DEF="LA_TriLamp-Key"
 			                  ambientIntensity="0.0000"
@@ -136,9 +136,9 @@
 			                  />
 		</Transform>
 		<Transform DEF="Camera_001_TRANSFORM"
-		           translation="-2.377551 -0.141606 1.117195"
+		           translation="2.377551 1.117195 -0.141606"
 		           scale="1.000000 1.000000 1.000000"
-		           rotation="0.528622 -0.505867 -0.681658 1.903699"
+		           rotation="-0.138776 0.979648 0.145019 1.635312"
 		           >
 			<Viewpoint DEF="CA_Camera_001"
 			           centerOfRotation="0 0 0"
