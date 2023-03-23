@@ -40,7 +40,9 @@
 				<Group DEF="group_ME_Circle">
 					<Shape>
 						<Appearance>
-						<ImageTexture url="drpepper_texture.jpg"/>
+							<Material DEF="MA_drpepper_texture"
+							          diffuseColor="0.800 0.800 0.800"/>
+									  <ImageTexture url="drpepper_texture.jpg"/>
 						</Appearance>
 						<IndexedFaceSet solid="false"
 						                creaseAngle="0.5236"
@@ -68,7 +70,14 @@
 					<Group DEF="group_ME_Circle_001">
 						<Shape>
 							<Appearance>
-								<Material DEF="lid"/>
+								<Material DEF="MA_lid"
+								          diffuseColor="0.100 0.000 0.000"
+								          specularColor="0.200 0.200 0.200"
+								          emissiveColor="0.000 0.000 0.000"
+								          ambientIntensity="0.000"
+								          shininess="0.1"
+								          transparency="0.0"
+								          />
 							</Appearance>
 							<IndexedFaceSet solid="false"
 							                creaseAngle="0.5236"
@@ -93,7 +102,7 @@
 			<DirectionalLight DEF="LA_TriLamp-Back"
 			                  ambientIntensity="0.0000"
 			                  color="1.0000 1.0000 1.0000"
-			                  intensity="1.0000"
+			                  intensity="1000.0000"
 			                  direction="-0.0000 0.0000 -1.0000"
 			                  />
 		</Transform>
@@ -103,9 +112,9 @@
 		           rotation="-0.823922 0.515564 0.235259 1.011560"
 		           >
 			<DirectionalLight DEF="LA_TriLamp-Fill"
-			                  ambientIntensity="0.0000"
+			                  ambientIntensity="100.0000"
 			                  color="1.0000 1.0000 1.0000"
-			                  intensity="1.0000"
+			                  intensity="2000.0000"
 			                  direction="0.0000 0.0000 -1.0000"
 			                  />
 		</Transform>
@@ -115,9 +124,9 @@
 		           rotation="-0.759666 -0.591629 -0.269968 1.081834"
 		           >
 			<DirectionalLight DEF="LA_TriLamp-Key"
-			                  ambientIntensity="0.0000"
+			                  ambientIntensity="100.0000"
 			                  color="1.0000 1.0000 1.0000"
-			                  intensity="1.0000"
+			                  intensity="3000.0000"
 			                  direction="-0.0000 0.0000 -1.0000"
 			                  />
 		</Transform>
