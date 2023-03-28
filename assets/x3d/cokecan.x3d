@@ -15,12 +15,12 @@
 		            groundColor="0.051 0.051 0.051"
 		            skyColor="0.051 0.051 0.051"
 		            />
-		<Transform DEF="Camera_TRANSFORM"
+		<Transform DEF="Camera_Front_TRANSFORM"
 		           translation="-28.956675 19.270031 -5.774999"
 		           scale="1.000000 1.000000 1.000000"
 		           rotation="-0.177259 -0.960708 -0.213588 1.795430"
 		           >
-			<Viewpoint DEF="CA_Camera"
+			<Viewpoint DEF="CA_Camera_Front"
 			           centerOfRotation="0 0 0"
 			           position="-0.00 -0.00 -0.00"
 			           orientation="-0.00 0.91 -0.42 0.00"
@@ -42,7 +42,7 @@
 						<Appearance>
 							<Material DEF="MA_top"
 							          diffuseColor="1.000 1.000 1.000"
-							          specularColor="0.500 0.500 0.500"
+							          specularColor="0.401 0.401 0.401"
 							          emissiveColor="0.000 0.000 0.000"
 							          ambientIntensity="0.000"
 							          shininess="0.250"
@@ -62,8 +62,8 @@
 					</Shape>
 					<Shape>
 						<Appearance>
-							<Material DEF="coke_texture"/>
-						<ImageTexture url="coke_texture.jpg"/>   
+							<Material DEF="MA_coke_texture"/>
+						<ImageTexture url="coke_texture.jpg"/>
 						</Appearance>
 						<IndexedFaceSet solid="false"
 						                creaseAngle="4.0000"
@@ -89,12 +89,10 @@
 					<Group DEF="group_ME_Circle_001">
 						<Shape>
 							<Appearance>
-								<Material DEF="top" 
-								          diffuseColor="1.000 1.000 1.000"
-								          specularColor="0.500 0.500 0.500"
-								          emissiveColor="0.000 0.000 0.000"
-								          ambientIntensity="0.000"
-								          shininess="0.25"
+								<Material USE="MA_top" 
+								diffuseColor="1.0 1.0 1.0"
+								specularColor="0.0 0.0 0.0"
+								shininess="0.1"
 								/>
 							</Appearance>
 							<IndexedFaceSet solid="false"
@@ -119,7 +117,7 @@
 			<PointLight DEF="LA_TriLamp-Back"
 			            ambientIntensity="0.0000"
 			            color="1.0000 1.0000 1.0000"
-			            intensity="1.0000"
+			            intensity="0.0"
 			            radius="25.0000" 
 			            location="-0.0000 -0.0000 -0.0000"
 			            />
@@ -129,34 +127,60 @@
 		           scale="1.000000 1.000000 1.000000"
 		           rotation="-0.861778 -0.503664 -0.060470 0.276850"
 		           >
-			<DirectionalLight DEF="LA_TriLamp-Fill"
-			                  ambientIntensity="0.0000"
-			                  color="1.0000 1.0000 1.0000"
-			                  intensity="1.0000"
-			                  direction="-0.0000 0.0000 -1.0000"
-			                  />
+			<PointLight DEF="LA_TriLamp-Fill"
+			            ambientIntensity="0.0000"
+			            color="1.0000 1.0000 1.0000"
+			            intensity="0.05"
+			            radius="25.0000" 
+			            location="0.0000 0.0000 -0.0000"
+			            />
 		</Transform>
 		<Transform DEF="TriLamp-Key_TRANSFORM"
 		           translation="-6.986366 14.013486 -7.866458"
 		           scale="1.000000 1.000000 1.000000"
 		           rotation="0.497709 -0.710617 -0.497301 3.099430"
 		           >
-			<DirectionalLight DEF="LA_TriLamp-Key"
-			                  ambientIntensity="0.0000"
-			                  color="1.0000 1.0000 1.0000"
-			                  intensity="1.0000"
-			                  direction="0.0000 0.0000 -1.0000"
-			                  />
+			<PointLight DEF="LA_TriLamp-Key"
+			            ambientIntensity="0.0000"
+			            color="1.0000 1.0000 1.0000"
+			            intensity="0.05"
+			            radius="25.0000" 
+			            location="0.0000 -0.0000 0.0000"
+			            />
 		</Transform>
-		<Transform DEF="Camera_001_TRANSFORM"
-		           translation="8.578207 16.858633 27.027143"
+		<Transform DEF="Camera_Back_TRANSFORM"
+		           translation="22.970551 9.411172 20.239351"
 		           scale="1.000000 1.000000 1.000000"
-		           rotation="-0.829989 0.545360 0.117061 0.506116"
+		           rotation="-0.161519 0.984037 0.074729 0.878973"
 		           >
-			<Viewpoint DEF="CA_Camera_001"
+			<Viewpoint DEF="CA_Camera_Back"
 			           centerOfRotation="0 0 0"
 			           position="-0.00 -0.00 -0.00"
-			           orientation="-0.06 -0.97 -0.24 0.00"
+			           orientation="0.44 -0.89 -0.15 0.00"
+			           fieldOfView="0.691"
+			           />
+		</Transform>
+		<Transform DEF="Camera_Top_TRANSFORM"
+		           translation="-13.130270 29.016129 -7.193963"
+		           scale="1.000000 1.000000 1.000000"
+		           rotation="-0.269478 -0.847860 -0.456635 2.213741"
+		           >
+			<Viewpoint DEF="CA_Camera_Top"
+			           centerOfRotation="0 0 0"
+			           position="0.00 0.00 -0.00"
+			           orientation="-0.98 -0.15 0.10 0.00"
+			           fieldOfView="0.691"
+			           />
+		</Transform>
+		<Transform DEF="Camera_Bottom_TRANSFORM"
+		           translation="-18.102682 -15.330812 9.607397"
+		           scale="1.000000 1.000000 1.000000"
+		           rotation="0.518149 -0.794393 0.316955 1.312382"
+		           >
+			<Viewpoint DEF="CA_Camera_Bottom"
+			           centerOfRotation="0 0 0"
+			           position="-0.00 -0.00 0.00"
+			           orientation="0.83 0.38 0.40 0.00"
 			           fieldOfView="0.691"
 			           />
 		</Transform>
