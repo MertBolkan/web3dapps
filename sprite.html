@@ -1,51 +1,191 @@
-<html>
-    <head>
-        <title>Sprite bottle X3DOM page</title>
-        <script type="text/javascript" src="js/x3dom.js"></script>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <style>
-            .contents{
-                width: 700px;
-                border: 5px solid gray;
-                background: lightblue;
-                padding: 30px;
-                margin: 20px;
-            }
-            #modelStyle{
-                border: double;
-                width: 50px;
-                background: lightgray;
-                margin-left: inherit;
-            }
-            .centre{
-                text-align: center;
-            }
-            p.centre{
-                text-align: center;
-                color: red;
-                font-weight: bold;
-            }
-            p{
-                margin-left: 10px;
-            }
-            .textBox{
-                padding: 10px;
-            }
-        </style>
-    </head>
-<body>
-    <div class="contents">
-        <h1 class="centre, textBox">X3D to X3DOM conversion workflow result</h1>
-        <p class="textBox";>Direct conversion to X3D using blender. Result embedded into HTML using X3DOM libraries - x3dom.css and x3dom.js. </p>
-<div id="modelStyle">
-    <x3d width="500px" height="400px">
-        <scene>
-            <p class="centre">This Sprite bottle was built in Blender and exported to X3D</p>
-            <inline url="3d_models/spritebottle/spritebottle.x3d"></inline>
-        </scene>
-    </x3d>
-</div>
-</div>
-</body>
-<link rel="stylesheet" type="text/css" href="css/x3dom.css"></link>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--X3dom-->
+    <link rel="stylesheet" type="text/css" href="css/x3dom.css">
+    <!-- Awesome fonts -->
+    <script src="https://kit.fontawesome.com/f2fa64bd3c.js" crossorigin="anonymous"></script>
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Sprite html</title>
+  </head>
+
+  <body>
+<!-- Logo and Navigation bar -->
+    <nav class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
+    <div class="container-fluid">
+      <!-- Brand -->
+      <div class="logo">
+        <a class="navbar-brand" href="#">
+          <h1>1</h1>
+        <h1>oca</h1>
+        <h2>Cola</h2>
+        <h3>Journey</h3>
+        <p>Refreshing the world, one story at a time</p>
+        </a>
+        </div>
+            
+      <!--Collapsible Navbar Menu icon-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--Link menu item button to the Links class navbar-collapse selector-->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="About Web 3D Applications"
+          data-content="3D Apps is a final year and postgraduate moodule...">About</a>
+        </li>
+    
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" aria-expanded="false">Drinks</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="coke.html">Coca cola</a>
+            <a class="dropdown-item" href="sprite.html">Sprite</a>
+            <a class="dropdown-item" href="pepper.html">Dr Pepper</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    </nav>
+
+<!--Coke page-->
+    <div class="container-fluid main_contents">
+<!--Row to hold two cards to hold: 1)The X3D model and 2)The gallery-->
+    <div class="row">
+      <!--Column to hold the X3D model-->
+      <div class="col-sm-9">
+        <div class="card text-left">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a class="nav-link" href="coke.html">Coke</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="sprite.html">Sprite</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pepper.html">DrPepper</a>
+              </li>
+            </ul>
+          </div>
+
+<!--Bootstrap 4 card body to hold info about the X3D model-->
+    <div class="card-body">
+        <h4 class="card-title">Sprite X3D model</h4>
+
+        <!--X3D code here-->
+        <div class="model3D">
+          <x3d>
+            <scene>
+              <inline url="assets/x3d/spritebottle.x3d"></inline>
+            </scene>
+          </x3d>
+        </div>
+        <p class="card-text">This X3D model has been created in Blender, exported directly to x3d.</p>
+        <h5 class="card-subtitle">Camera Views</h5>
+        <div class="camera-btns">
+          <p class="card-text">These buttons select a range of X3D model viewpoints</p>
+          <div class="btn-group">
+            <a href="#" class="btn btn-primary btn-responsive camera-font">Front</a>
+            <a href="#" class="btn btn-secondary btn-responsive camera-font">Back</a>
+            <a href="#" class="btn btn-success btn-responsive camera-font">Top</a>
+            <a href="#" class="btn btn-light btn-responsive camera-font">Bottom</a>
+            <a href="#" class="btn btn-outline-dark disabled btn-responsive camera-font">Off</a>
+          </div>  
+        </div>
+    </div>
+        </div>
+      </div>
+
+<!--Column to hold 3D image gallery-->
+      <div class="col-sm-3">
+        <div class="card text-left">
+          <div class="card-header gallery-header">
+            Gallery
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">3D Image Gallery</h4>
+            <a href="coke.html">
+              <img class="card-img-top img-fluid img-thumbnail" src="assets/images/coca_cola.jpg" alt="Coca cola">
+            </a>
+            <a href="sprite.html">
+              <img class="card-img-top img-fluid img-thumbnail" src="assets/images/sprite.jpg" alt="Sprite">
+            </a>
+            <a href="pepper.html">
+              <img class="card-img-top img-fluid img-thumbnail" src="assets/images/dr_pepper.jpg" alt="Dr Pepper"> 
+              </a> 
+              <p class="card-text">These 3D images of the Coke can, Sprite bottle and Dr Pepper cup are rendered in Blender with EEve</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!--Row to hold 1 card to hold the coca cola text-->
+      <div class="row">
+        <!--Dr Pepper column-->
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Sprite</h3>
+              <p class="card-text">First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime flavoured soft drink and is sold in more than 190 different countries.
+                Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories.                                 
+                </p>
+                <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite" class="btn btn-primary">Find out more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!--End main-contents container-fluid-->
+
+    <!--Footer-->
+    <nav class="navbar navbar-expand-sm footer">
+      <div class="container-fluid">   
+          <div class="navbar-text float-left copyright">
+              <p><span class="align-baseline"></span>&copy Mobile Web 3D Applications </span></p>
+          </div>
+          <div class="navbar-text social">
+                <a href="https://github.com/MertBolkan"><i class="fab fa-github-square fa-2x fa-pull-right"></i></a>
+                <a href="#"><i class="fab fa-google-plus-square fa-2x fa-pull-right"></i></a>
+                <a href="#"><i class="fab fa-twitter-square fa-2x fa-pull-right"></i></a>
+                <a href="#"><i class="fab fa-facebook-square fa-2x fa-pull-right"></i></a>
+          </div>
+      </div>
+  </nav> 
+
+
+    <!-- Optional JavaScript -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    -->
+
+    <!-- Option 2: Separate Local Jquery Popper and Bootstrap JS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!--x3dom JavaScript-->
+    <script type="text/javascript" src="js/x3dom.js"></script>
+
+    <!--Popover-->
+    <script src="js/custom.js" crossorigin="anonymous"></script>
+  </body>
 </html>

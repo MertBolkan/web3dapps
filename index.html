@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/f2fa64bd3c.js" crossorigin="anonymous"></script>
     <!--Custom CSS-->
     <link rel="stylesheet" href="css/custom.css">
-    <title>mb849's Web3D apps</title>
+    <title>Main page</title>
   </head>
   <body>
 <!-- Logo and Navigation bar -->
@@ -42,7 +42,8 @@
           <a class="nav-link active" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="About Web 3D Applications"
+          data-content="3D Apps is a final year and postgraduate moodule...">About</a>
         </li>
     
         <!-- Dropdown -->
@@ -53,6 +54,9 @@
             <a class="dropdown-item" href="sprite.html">Sprite</a>
             <a class="dropdown-item" href="pepper.html">Dr Pepper</a>
           </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
         </li>
       </ul>
     </div>
@@ -76,7 +80,7 @@
       <!--Coca cola-->
       <div class="col-sm-4">
         <div class="card">
-          <a href="#">
+          <a href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola">
             <img class="card-img-top img-fluid img-thumbnail" src="assets/images/coca_cola.jpg" alt="Coca cola">
           </a>
           <div class="card-body">
@@ -91,7 +95,7 @@
       <!--Sprite-->
       <div class="col-sm-4">
         <div class="card">
-          <a href="#">
+          <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite">
             <img class="card-img-top img-fluid img-thumbnail" src="assets/images/sprite.jpg" alt="Sprite">
           </a>
           <div class="card-body">
@@ -106,7 +110,7 @@
       <!--Dr Pepper-->
       <div class="col-sm-4">
         <div class="card">
-          <a href="#">
+          <a href="http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper">
             <img class="card-img-top img-fluid img-thumbnail" src="assets/images/dr_pepper.jpg" alt="Dr Pepper">
           </a>
           <div class="card-body">
@@ -114,12 +118,13 @@
             <p class="card-text">Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a century and it's still the same,
                with that distinctive flavour you just can't quite put your tongue on. It was created by Texas pharmacist Charles Alderton in 1885.
               </p>
-            <a href="http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper " class="btn btn-primary">Find out more</a>
+            <a href="http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper" class="btn btn-primary">Find out more</a>
           </div>
         </div>
       </div>
     </div>
     </div>
+
     <!--Footer-->
     <nav class="navbar navbar-expand-sm footer">
       <div class="container">   
@@ -135,16 +140,42 @@
       </div>
   </nav> 
 
+  <!-- My 3D App modals -->
+    <!-- Contact modal -->
+
+    <div class="modal fade" id="contactModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">3D App Contact Details</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+                <p>Contact via Email: mb849@sussex.ac.uk</p>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>           
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    -->
 
     <!-- Option 2: Separate Local Jquery Popper and Bootstrap JS -->
     <script src="js/jquery.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
+
+      <!-- Custom JavaScript code for my 3d App -->
+    <!-- intialise popovers-->
+    <script src="js/custom.js" crossorigin="anonymous"></script>
+    
   </body>
 </html>
