@@ -39,20 +39,20 @@ function headlight()
 
 function cameraFront()
 {
-	document.getElementById('model__CameraFront').setAttribute('bind', 'true');
+	document.getElementById('model__Camera_Front').setAttribute('bind', 'true');
 }
 
 function cameraBack()
 {
-	document.getElementById('model__CameraBack').setAttribute('bind', 'true');
+	document.getElementById('model__Camera_Back').setAttribute('bind', 'true');
 }
 
 function cameraTop()
 {
-	document.getElementById('model__CameraTop').setAttribute('bind', 'true');
+	document.getElementById('model__Camera_Top').setAttribute('bind', 'true');
 }
 
 function cameraBottom()
 {
-	document.getElementById('model__CameraBottom').setAttribute('bind', 'true');
+	document.getElementById('model__Camera_Bottom').setAttribute('bind', 'true');
 }
