@@ -1,6 +1,6 @@
 <?php
 class Model {
-	// Property declaration, in this case we are declaring a variable or handeler that points to the database connection, this will become a PDO object
+	// Property declaration, in this case we are declaring a variable or handler that points to the database connection, this will become a PDO object
 	public $dbhandle;
 	
 	// Method to create database connection using PHP Data Objects (PDO) as the interface to SQLite
@@ -8,28 +8,39 @@ class Model {
 	{
 		// Set up the database source name (DSN)
 		$dsn = 'sqlite:./db/test1.db';
-		
+		$user = 'user';
+		$pass = 'password';
+		$options = [
+			PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION, //turn on errors in the form of exceptions
+			PDO::ATTR_EMULATE_PREPARES   => false, // turn off emulation mode for "real" prepared statements
+		];
 		// Then create a connection to a database with the PDO() function
 		try {	
 			// Change connection string for different databases, currently using SQLite
-			$this->dbhandle = new PDO($dsn, 'user', 'password', array(
-    													PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, //turn on errors in the form of exceptions
-    													PDO::ATTR_EMULATE_PREPARES => false, // turn off emulation mode for "real" prepared statements
-														));
+			$this->dbhandle = new PDO($dsn, $user, $pass, $options);
 			// $this->dbhandle->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			// echo 'Database connection created</br></br>';
 		}
 		catch (PDOEXception $e) {
-			echo "I'm sorry, I'm afraid I can't connect to the database!";
+			echo "I'm sorry, Martin. I'm afraid I can't connect to the database!";
 			// Generate an error message if the connection fails
         	print new Exception($e->getMessage());
     	}
 	}
 	
+	// This is a simple fix to represent, what would in reality be, a table in the database containing the brand names. 
+	// The database schema would then contain a foreign key for each drink entry linking back to the brand name
+	// This structure allows us to read the list of brand names to populate a menu in a view
+	public function dbGetBrand()
+	{
+		// Return the Brand Names
+		return array("-", "Coke", "Coke Light","Coke Zero","Sprite", "Dr Pepper", "Fanta");
+	}
+
 	public function dbCreateTable()
 	{
 		try {
-			$this->dbhandle->exec("CREATE TABLE Model_3D (Id INTEGER PRIMARY KEY, x3dModelTitle TEXT, x3dCreationMethod TEXT, modelTitle TEXT, modelSubtitle TEXT, modelDescription TEXT)");
+			$this->dbhandle->exec("CREATE TABLE Model_3D (Id INTEGER PRIMARY KEY, brand TEXT, x3dModelTitle TEXT, x3dCreationMethod TEXT, modelTitle TEXT, modelSubtitle TEXT, modelDescription TEXT)");
 			return "Model_3D table is successfully created inside test1.db file";
 		}
 		catch (PDOEXception $e){
@@ -42,12 +53,18 @@ class Model {
 	{
 		try{
 			$this->dbhandle->exec(
-			"INSERT INTO Model_3D (Id, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
-				VALUES (1, 'X3D Coke Model', 'string_2', 'string_3','string_4','string_5'); " .
-			"INSERT INTO Model_3D (Id, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
-				VALUES (2, 'X3D Sprite Model', 'string_2', 'string_3','string_4','string_5'); " .
-			"INSERT INTO Model_3D (Id, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
-				VALUES (3, 'X3D Pepper Model', 'string_2', 'string_3','string_4','string_5'); ");
+			"INSERT INTO Model_3D (Id, brand, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
+				VALUES (1, 'Coke', 'X3D Coke Model', 'string_2', 'string_3','string_4','string_5'); " .
+			"INSERT INTO Model_3D (Id, brand, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
+				VALUES (2, 'Sprite', 'X3D Sprite Model', 'string_2', 'string_3','string_4','string_5'); " .
+			"INSERT INTO Model_3D (Id, brand, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
+				VALUES (3, 'Fanta', 'X3D Fanta Model', 'string_2', 'string_3','string_4','string_5'); " .
+			"INSERT INTO Model_3D (Id, brand, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
+				VALUES (4, 'Coke Light', 'X3D Coke Light Model', 'string_2', 'string_3','string_4','string_5'); " .
+			"INSERT INTO Model_3D (Id, brand, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
+				VALUES (5, 'Coke Zero', 'X3D Coke Zero Model', 'string_2', 'string_3','string_4','string_5'); " .
+			"INSERT INTO Model_3D (Id, brand, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
+				VALUES (6, 'Dr Pepper', 'X3D Dr Pepper Model', 'string_2', 'string_3','string_4','string_5'); ");
 			return "X3D model data inserted successfully inside test1.db";
 		}
 		catch(PDOEXception $e) {
