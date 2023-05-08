@@ -6,7 +6,7 @@
 		<meta name="generator" content="Blender 3.5.1" />
 	</head>
 	<Scene>
-		<NavigationInfo headlight="false"
+		<NavigationInfo headlight="true"
 		                visibilityLimit="0.0"
 		                type='"EXAMINE", "ANY"'
 		                avatarSize="0.25, 1.75, 0.75"
@@ -41,11 +41,11 @@
 					<Shape>
 						<Appearance>
 							<Material DEF="MA_top"
-							          diffuseColor="0.800 0.800 0.800"
+							          diffuseColor="1.00 1.00 1.00"
 							          specularColor="0.401 0.401 0.401"
 							          emissiveColor="0.000 0.000 0.000"
 							          ambientIntensity="0.000"
-							          shininess="0.500"
+							          shininess="0.25"
 							          transparency="0.0"
 							          />
 						</Appearance>
@@ -62,14 +62,8 @@
 					</Shape>
 					<Shape>
 						<Appearance>
-							<Material DEF="MA_fanta_texture"
-							          diffuseColor="0.800 0.800 0.800"
-							          specularColor="0.401 0.401 0.401"
-							          emissiveColor="0.000 0.000 0.000"
-							          ambientIntensity="0.000"
-							          shininess="0.500"
-							          transparency="0.0"
-							          />
+							<Material DEF="MA_fanta_texture"/>
+							<ImageTexture url="fanta_texture.jpg"/>
 						</Appearance>
 						<IndexedFaceSet solid="false"
 						                creaseAngle="4.0000"
@@ -96,7 +90,9 @@
 				<Group DEF="group_ME_Tab">
 					<Shape>
 						<Appearance>
-							<Material USE="MA_top" />
+							<Material USE="MA_top" 
+							diffuseColor="1.0 1.0 1.0"
+							shininess="0.1"/>
 						</Appearance>
 						<IndexedFaceSet solid="false"
 						                creaseAngle="4.0000"
@@ -120,7 +116,7 @@
 			<PointLight DEF="LA_TriLamp-Back"
 			            ambientIntensity="0.0000"
 			            color="1.0000 1.0000 1.0000"
-			            intensity="1.0000"
+			            intensity="0.0000"
 			            radius="25.0000" 
 			            location="-0.0000 -0.0000 0.0000"
 			            />
@@ -133,7 +129,7 @@
 			<PointLight DEF="LA_TriLamp-Fill"
 			            ambientIntensity="0.0000"
 			            color="1.0000 1.0000 1.0000"
-			            intensity="1.0000"
+			            intensity="0.05"
 			            radius="25.0000" 
 			            location="-0.0000 0.0000 -0.0000"
 			            />
@@ -146,44 +142,44 @@
 			<PointLight DEF="LA_TriLamp-Key"
 			            ambientIntensity="0.0000"
 			            color="1.0000 1.0000 1.0000"
-			            intensity="1.0000"
+			            intensity="0.0500"
 			            radius="25.0000" 
 			            location="0.0000 0.0000 -0.0000"
 			            />
 		</Transform>
 		<Transform DEF="Camera_Top_TRANSFORM"
-		           translation="-1.131198 12.336554 -22.552597"
+		           translation="-12.713687 19.924889 13.594416"
 		           scale="1.000000 1.000000 1.000000"
-		           rotation="-0.005924 -0.984617 -0.174628 3.074816"
+		           rotation="-0.626941 -0.733665 -0.262070 1.035783"
 		           >
 			<Viewpoint DEF="CA_Camera_Top"
 			           centerOfRotation="0 0 0"
-			           position="-0.00 0.00 -0.00"
-			           orientation="-0.08 0.03 -1.00 0.00"
+			           position="0.00 -0.00 -0.00"
+			           orientation="-0.64 0.77 -0.00 0.00"
 			           fieldOfView="0.691"
 			           />
 		</Transform>
 		<Transform DEF="Camera_Bottom_TRANSFORM"
-		           translation="0.000000 0.000000 0.000000"
+		           translation="-7.608168 -12.819696 14.543576"
 		           scale="1.000000 1.000000 1.000000"
-		           rotation="0.495830 -0.859726 0.122576 0.559983"
+		           rotation="0.810988 -0.540917 0.222949 0.940418"
 		           >
 			<Viewpoint DEF="CA_Camera_Bottom"
 			           centerOfRotation="0 0 0"
-			           position="0.00 0.00 0.00"
-			           orientation="-0.94 0.01 -0.34 0.00"
+			           position="-0.00 -0.00 0.00"
+			           orientation="0.77 -0.62 0.15 0.00"
 			           fieldOfView="0.691"
 			           />
 		</Transform>
 		<Transform DEF="Camera_Back_TRANSFORM"
-		           translation="0.000000 0.000000 0.000000"
+		           translation="-5.556534 9.530138 -23.494238"
 		           scale="1.000000 1.000000 1.000000"
-		           rotation="-0.012145 -0.992534 -0.121366 2.943606"
+		           rotation="-0.014581 -0.993210 -0.115421 2.891954"
 		           >
 			<Viewpoint DEF="CA_Camera_Back"
 			           centerOfRotation="0 0 0"
-			           position="0.00 0.00 0.00"
-			           orientation="-0.99 -0.03 0.11 0.00"
+			           position="-0.00 -0.00 0.00"
+			           orientation="-0.00 0.95 0.32 0.00"
 			           fieldOfView="0.691"
 			           />
 		</Transform>
