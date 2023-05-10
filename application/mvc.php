@@ -1,4 +1,5 @@
 <?php
+/*
 require 'view/load.php';
 require 'model/model.php';
 require 'controller/controller.php';
@@ -8,4 +9,4 @@ $pageURI =substr($pageURI,strrpos($pageURI,'index.php')+10);
 		new Controller('home');
 	else
 		new Controller($pageURI);
-?>
+?>*/

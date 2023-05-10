@@ -1,7 +1,7 @@
 //adapted from example code 'benskitchen.com'
 
 var spinning = false;
-
+//Don't know how to adapt this to Blender's export
 function spin()
 {
 	spinning = !spinning;
@@ -39,20 +39,20 @@ function headlight()
 
 function cameraFront()
 {
-	document.getElementById('model__Camera_Front').setAttribute('bind', 'true');
+	document.getElementById('CA_Camera_Front').setAttribute('bind', 'true');
 }
 
 function cameraBack()
 {
-	document.getElementById('model__Camera_Back').setAttribute('bind', 'true');
+	document.getElementById('CA_Camera_Back').setAttribute('bind', 'true');
 }
 
 function cameraTop()
 {
-	document.getElementById('model__Camera_Top').setAttribute('bind', 'true');
+	document.getElementById('CA_Camera_Top').setAttribute('bind', 'true');
 }
 
 function cameraBottom()
 {
-	document.getElementById('model__Camera_Bottom').setAttribute('bind', 'true');
+	document.getElementById('CA_Camera_Bottom').setAttribute('bind', 'true');
 }

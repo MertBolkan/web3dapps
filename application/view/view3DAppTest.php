@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,4 +18,4 @@
 	?>
 	<p>If you are seeing the test data above Model 3D Image Data, then your basic MVC framework is working </p>
 </body>
-</html>
+</html> -->

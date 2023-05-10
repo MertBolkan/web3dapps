@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
  <meta charset="utf-8">
@@ -18,9 +18,9 @@
                     echo '<option value="'. $data[$i] .'">'. $data[$i] . '</option>';
             ?>
         </select>
-    </form> 
+    </form> -->
     <!-- Inject the HTML into this div tag placeholder -->
-    <div id="placeholder" style='margin:5px; padding:10px;'>Insert data here</div>
+    <!--<div id="placeholder" style='margin:5px; padding:10px;'>Insert data here</div>
 
     <script>
     $(document).ready(function(){
@@ -86,4 +86,4 @@
   </script>
    
 </body>
-</html>	
+</html>-->

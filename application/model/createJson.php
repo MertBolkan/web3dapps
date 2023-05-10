@@ -1,12 +1,13 @@
 <?php
+/*
 echo '{ "users":[
             {
-                "firstName":"Martin",
-                "lastName":"White",
+                "firstName":"M",
+                "lastName":"B",
                 "joined": {
-                    "month":"July",
-                    "day":1,
-                    "year":1989
+                    "month":"April",
+                    "day":23,
+                    "year":2023
                 }
             },
             {
@@ -20,4 +21,4 @@ echo '{ "users":[
             }
     ]}
 	';
-?>
+?>*/

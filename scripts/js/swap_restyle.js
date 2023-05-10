@@ -14,7 +14,7 @@ $(document).ready(function() {
 		$('#cokeDescription').hide();
 		$('#spriteDescription').hide(); 
 		$('#pepperDescription').hide(); 
-
+		$('#fantaDescription').hide();
 
 		$('#navHome').click(function(){
 			$('#home').show();
@@ -23,7 +23,8 @@ $(document).ready(function() {
 			$('#interaction').hide();
 			$('#cokeDescription').hide();
 			$('#spriteDescription').hide(); 
-			$('#pepperDescription').hide(); 	  
+			$('#pepperDescription').hide(); 	
+			$('#fantaDescription').hide();  
 		});
 
 		$('#navAbout').click(function(){
@@ -33,7 +34,8 @@ $(document).ready(function() {
 			$('#interaction').hide();
 			$('#cokeDescription').hide();
 			$('#spriteDescription').hide(); 
-			$('#pepperDescription').hide(); 	  
+			$('#pepperDescription').hide(); 
+			$('#fantaDescription').hide();  	  
 		});
 
 		$('#navModels').click(function(){
@@ -44,6 +46,7 @@ $(document).ready(function() {
 			$('#cokeDescription').show();
 			$('#spriteDescription').hide(); 
 			$('#pepperDescription').hide(); 
+			$('#fantaDescription').hide();  
 		});
 	}
 
@@ -53,30 +56,48 @@ $(document).ready(function() {
 			$('#coke').show();
 			$('#sprite').hide();
 			$('#pepper').hide();
+			$('#fanta').hide();
 			$('#interaction').show(); 
 			$('#cokeDescription').show();
 			$('#spriteDescription').hide(); 
 			$('#pepperDescription').hide(); 
+			$('#fantaDescription').hide();  
 		});
 
 		$('#navSprite').click(function(){
 			$('#coke').hide();
 			$('#sprite').show();
 			$('#pepper').hide();
+			$('#fanta').hide();
 			$('#interaction').show(); 
 			$('#cokeDescription').hide();
 			$('#spriteDescription').show();
-			$('#pepperDescription').hide();  	  	  
+			$('#pepperDescription').hide();  
+			$('#fantaDescription').hide();    
 		});
 
 		$('#navPepper').click(function(){
 			$('#coke').hide();
 			$('#sprite').hide();
 			$('#pepper').show();
+			$('#fanta').hide();
 			$('#interaction').show(); 
 			$('#cokeDescription').hide();
 			$('#spriteDescription').hide(); 
-			$('#pepperDescription').show(); 	   
+			$('#pepperDescription').show(); 
+			$('#fantaDescription').hide();  	   
+		});
+
+		$('#navFanta').click(function(){
+			$('#coke').show();
+			$('#sprite').hide();
+			$('#pepper').hide();
+			$('#fanta').hide();
+			$('#interaction').show(); 
+			$('#cokeDescription').show();
+			$('#spriteDescription').hide(); 
+			$('#pepperDescription').hide(); 
+			$('#fantaDescription').hide();  
 		});
 	}
 
@@ -87,23 +108,23 @@ function changeLook() {
 	switch (counter) {
 		case 1:
 			document.getElementById('bodyColor').style.backgroundColor = 'lightblue';
-			document.getElementById('headerColor').style.backgroundColor = '#FF0000';
-			document.getElementById('footerColor').style.backgroundColor = '#FF9900';
+			document.getElementById('headerColor').style.backgroundColor = 'darkblue';
+			document.getElementById('footerColor').style.backgroundColor = 'darkblue';
 			break;
 		case 2:
-			document.getElementById('bodyColor').style.backgroundColor = '#FF6600';
-			document.getElementById('headerClor').style.backgroundColor = '#FF9999';
-			document.getElementById('footerColor').style.backgroundColor = '#996699';
+			document.getElementById('bodyColor').style.backgroundColor = 'pink';
+			document.getElementById('headerClor').style.backgroundColor = 'coral';
+			document.getElementById('footerColor').style.backgroundColor = 'coral';
 			break;
 		case 3:
-			document.getElementById('bodyColor').style.backgroundColor = 'coral';
-			document.getElementById('headerColor').style.backgroundColor = 'darkcyan';
-			document.getElementById('footerColor').style.backgroundColor = 'darksalmom';
+			document.getElementById('bodyColor').style.backgroundColor = 'red';
+			document.getElementById('headerColor').style.backgroundColor = 'grey';
+			document.getElementById('footerColor').style.backgroundColor = 'grey';
 			break;
 		case 4:
 			counter = 0;
 			document.getElementById('bodyColor').style.backgroundColor = 'lightgrey';
-			document.getElementById('headerColor').style.backgroundColor = 'chocolate';
+			document.getElementById('headerColor').style.backgroundColor = 'dimgrey';
 			document.getElementById('footerColor').style.backgroundColor = 'dimgrey';
 			break;
 	}

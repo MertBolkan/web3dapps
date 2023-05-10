@@ -1,4 +1,5 @@
 <?php
+/*
 class Load {
 
 	// Defaults to constructor as no specific constructor is defined
@@ -13,4 +14,4 @@ class Load {
 		include $file_name . '.php';
 	}
 }
-?>
+?>*/

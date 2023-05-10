@@ -1,19 +1,16 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<title>Test View — Flickr Web Service</title>  
-
-  <!-- FlickrService CSS -->
   <link rel="stylesheet" href="../application/css/flickrService.css">
-
 </head>
 <body>
 	<h1> Flickr Web Service</h1>
-  <h2> Search on Flickr Feed</h2>
+  <h2> Search on Flickr Feed</h2>-->
   <!-- Text input box -->
-  <div class="textInput">
+  <!--<div class="textInput">
     <input type="text" value="Sprite" id="txt" />
   </div>
   
@@ -35,4 +32,4 @@
   
 </body>
 </html>
-<!-- Flickr webservice http://www.flickr.com/services/feeds/docs/photos_public/ -->
+-->

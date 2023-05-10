@@ -42,8 +42,16 @@
 			"description": "Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a century and it's still the same, with that distinctive flavour you just can't quite put your tongue on. It was created by Texas pharmacist Charles Alderton in 1885. He gave a sample of the first ever batch to Wade Morrison, a local shop owner, and Mr Morrison instantly agreed to stock the drink. The distinctive, bold taste of Dr Pepper has been popular ever since."
 		},
 		{
+			"x3dModelTitle": "Fanta X3D Model",
+			"x3dCreationMethod": "This X3D model of the fanta can has been created in Blender, exported to X3D for display online.",
+			"title": "Fanta flavours",
+			"subTitle": "Orange bomb",		
+			"description": "Bright, bubbly, instantly refreshing and great tasting. Fanta is made with 100% natural flavours and is caffeine free. Fanta is available in a variety of real fruit flavours."
+		},
+
+		{
 			"galleryTitle": "3D Images",
-			"galleryDescription": "These 3D images of the Coke can, Sprite bottle and Dr Pepper cup are rendered in Blender 3.4.1 with EEvEE"
+			"galleryDescription": "These 3D images of the Coke can, Sprite bottle, Dr Pepper cup and Fanta can are rendered in Blender with EEvEE (except one sprite bottle, rendered with Cycles"
 		},
 		{
 			"CameraTitle": "Camera Views",

@@ -1,8 +1,5 @@
-<?php
-include '../debug/ChromePhp.php';
-ChromePhp::log('controller.php: Hello World');
-ChromePhp::log($_SERVER);	
-
+<?php	
+/*
 // Create the controller class for the MVC design pattern
 class Controller {
 
@@ -85,4 +82,5 @@ class Controller {
 	}
 
 }
-?>    
+?>   
+*/

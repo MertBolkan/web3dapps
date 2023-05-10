@@ -1,4 +1,5 @@
 <?php
+/*
 class Model {
 	// Property declaration, in this case we are declaring a variable or handler that points to the database connection, this will become a PDO object
 	public $dbhandle;
@@ -22,7 +23,7 @@ class Model {
 			// echo 'Database connection created</br></br>';
 		}
 		catch (PDOEXception $e) {
-			echo "I'm sorry, Martin. I'm afraid I can't connect to the database!";
+			echo "I'm sorry, I'm afraid I can't connect to the database!";
 			// Generate an error message if the connection fails
         	print new Exception($e->getMessage());
     	}
@@ -34,7 +35,7 @@ class Model {
 	public function dbGetBrand()
 	{
 		// Return the Brand Names
-		return array("-", "Coke", "Coke Light","Coke Zero","Sprite", "Dr Pepper", "Fanta");
+		return array("-", "Coke","Sprite", "Dr Pepper", "Fanta");
 	}
 
 	public function dbCreateTable()
@@ -59,10 +60,6 @@ class Model {
 				VALUES (2, 'Sprite', 'X3D Sprite Model', 'string_2', 'string_3','string_4','string_5'); " .
 			"INSERT INTO Model_3D (Id, brand, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
 				VALUES (3, 'Fanta', 'X3D Fanta Model', 'string_2', 'string_3','string_4','string_5'); " .
-			"INSERT INTO Model_3D (Id, brand, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
-				VALUES (4, 'Coke Light', 'X3D Coke Light Model', 'string_2', 'string_3','string_4','string_5'); " .
-			"INSERT INTO Model_3D (Id, brand, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
-				VALUES (5, 'Coke Zero', 'X3D Coke Zero Model', 'string_2', 'string_3','string_4','string_5'); " .
 			"INSERT INTO Model_3D (Id, brand, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
 				VALUES (6, 'Dr Pepper', 'X3D Dr Pepper Model', 'string_2', 'string_3','string_4','string_5'); ");
 			return "X3D model data inserted successfully inside test1.db";
@@ -132,4 +129,4 @@ class Model {
 		);
 	}
 }
-?>
+?>*/

@@ -21,9 +21,7 @@ while ($file = readdir($dir_handle)) {
 		if (in_array($extension, $allowed_extensions))
 		{
 			// Build a response string using the ~ symbol as a string separator
-			//$response .= $directory.'/'.$file.'~';
 			$response .= '/'.$file.'~';
-			//$i++;	
 		}
 	}
 }

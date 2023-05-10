@@ -4,7 +4,7 @@ $(document).ready(function() {
 	// Create the XMLHttpRequest Object for communicating with the web server
 	var xmlHttp = new XMLHttpRequest ();
 	// Stores number of horizontalColumns gallery has, if too large it won't fit in browser window
-	var numberOfColumns = 3;
+	var numberOfColumns = 4;
 	// Stores newly generated gallery HTML code
 	var htmlCode = "";
 	// Temporarily stores server response while code is generated
@@ -19,7 +19,6 @@ $(document).ready(function() {
 	xmlHttp.onreadystatechange = function() {
 		if(xmlHttp.readyState == 4) {
 			// Response handler code
-			//alert(xmlHttp.responseText);
 			response = xmlHttp.responseText.split("~");
 			htmlCode += '<tr>';
 			for (var i=0;i<response.length;i++) {
