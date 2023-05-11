@@ -17,7 +17,7 @@
 /*xs devices - default*/
 
 body {
-    background-color: rgb(164, 226, 241);
+    background-color: rgb(171, 233, 248);
 }
 p{
     font-family: 'OpenSans', sans-serif;
@@ -62,7 +62,7 @@ font-family: 'Oswald', sans-serif;
 }
 
 #main_text h2 {
-            color: rgba(0,102,153,1);
+            color: rgb(0, 23, 153);
             font-size: 20px;
             margin-top: 0px;
             margin-bottom: 5px;
@@ -83,15 +83,15 @@ font-family: 'Oswald', sans-serif;
 .drinksText > h2 {
     color: rgb(0, 0, 0);
     font-size: 20px;
-    margin-top: 1px;
-    margin-bottom: 4px;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
 .drinksText > h3 {
     color: rgb(0, 0, 0);
     font-size: 15px;
-    margin-top: 1px;
-    margin-bottom: 4px;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
 .drinksText > p {
@@ -106,7 +106,7 @@ font-family: 'Oswald', sans-serif;
             /* border-radius: .25rem; */
             margin-top: 10px;
             margin-bottom: 10px;
-            background-color: rgb(205, 239, 248);
+            background-color: rgba(205, 239, 248, 0.769);
 }
 .card-text{
     font-size: 12px;
@@ -118,7 +118,7 @@ font-family: 'Oswald', sans-serif;
     }
     
     .logo h1 {
-    font-family: cocaColaFont; /* You don't need to repeat this for each media query as it is propagated */
+    font-family: cocaColaFont; 
     font-size: 31px;
     margin: 0;
     margin-top: -10px;
@@ -131,7 +131,7 @@ font-family: 'Oswald', sans-serif;
     
     .logo h2 {
     font-family: cocaColaFont;
-    font-size: 31px;
+    font-size: 30px;
     margin-top: -6px;
     margin-bottom: -15px;
     padding-top: 0px;
@@ -215,7 +215,6 @@ X3D, x3d {
 
 /*Camera buttons*/
 .camera-btns {
-    /* background-color: rgba(0, 0, 255, 0.3);  */
     border-color: black; 
     border-style: solid;
     border-width: 1px;
@@ -225,7 +224,7 @@ X3D, x3d {
 
 .camera-btns > p  {
     font-size: 15px;
-    color: red;
+    color:black;
     padding: 5px 0px;
     font-weight: 900; 
 }
@@ -237,7 +236,7 @@ X3D, x3d {
 
 .camera-font:hover {
     font-weight: 700;   
-    color: rgb(3, 3, 3);
+    color: rgb(139, 139, 139);
 }
 
 .btn-responsive {
@@ -248,11 +247,11 @@ X3D, x3d {
 }
 
 
-/* CSS rule to overwrite the navbar background and border color — again, helps to stop your site looking like a Bootstrap clone! 
+/* CSS rule to overwrite the navbar background and border color 
 */
 .navbar_coca_cola {
     background-color: #760003; /* Set navbar background color */
-     border-color: rgba(250, 250, 107, 0.507); 
+     border-color: rgba(255, 255, 255, 0.791); 
      border-style: solid; 
     border-width: 1px;
     min-height: 70px;
@@ -287,8 +286,8 @@ X3D, x3d {
 .navbar_coca_cola .navbar-nav .nav-item > .active, 
 .navbar_coca_cola .navbar-nav > .active > a:hover, 
 .navbar_coca_cola .navbar-nav > .active > a:focus {
-    color:  #760003; /* Font color for active font */
-    background-color: #3399ff; /* Blue color for background */
+    color:  #7be7ff; /* Font color for active font */
+    background-color: #00226d; /* Dark Blue color for background */
 }
 
 /* A set of CSS rules to change the Bootstrap defaults for the menu link text color, hover, background, focus*/
@@ -320,12 +319,12 @@ X3D, x3d {
 }
 
 .dropdown-menu .dropdown-item {
-    color: #f70126;
+    color: #ff3a58;
 }
 
 .dropdown-menu .dropdown-item:hover {
     color: #030303;
-    background-color: #753029;
+    background-color: #be3424;
 }
 
 /* CSS rule to style the footer */
@@ -439,7 +438,7 @@ X3D, x3d {
     }
     
     .navbar-text > p {
-        color: rgb(232, 75, 12);
+        color: rgb(255, 85, 18);
         font-size: 16px;
     }
     
@@ -452,7 +451,7 @@ X3D, x3d {
     }
 
     .model3D  {
-        height: 210px;
+        height: 200px;
     }
  }
 
@@ -490,7 +489,6 @@ X3D, x3d {
     }
 
     .card {
-        /* border-radius: .25rem;*/
         margin-top: 10px;
         margin-bottom: 10px;
         background-color: rgb(218, 216, 148);
@@ -684,7 +682,7 @@ X3D, x3d {
     
     /* CSS rule to style the footer */
     .footer {
-        background-color: #678c02;
+        background-color: #3c0000;
         height: 70px;
     }
 

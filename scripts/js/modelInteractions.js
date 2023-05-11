@@ -34,7 +34,7 @@ var lightOn = true;
 function headlight()
 {
 	lightOn = !lightOn;
-	document.getElementById('model__headlight').setAttribute('headlight', lightOn.toString());
+	document.getElementById('headlight').setAttribute('headlight', lightOn.toString());
 }
 
 function cameraFront()

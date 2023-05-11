@@ -17,11 +17,12 @@
     <!--Lightbox to view images in gallery-->
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
     
-    <title>Home</title>
+    <title>Web3dapps assignment</title>
 
   </head>
 
   <body id="bodyColor">
+
 <!-- Logo and Navigation bar -->
     <nav id="headerColor" class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
     <div class="container-fluid">
@@ -51,12 +52,12 @@
         </li>
 
         <li class="nav-item">
-          <a id="navAbout" class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="About Web 3D Applications" data-content="3D Apps is a final year and postgraduate module ...">About</a>
+          <a id="navAbout" class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="About Web 3D Applications" data-content="My web 3D apps ...">About</a>
       </li>
 
         <!-- Dropdown -->
         <li class="nav-item">
-          <a id="navModels" class="nav-link"  href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="X3D Models" data-content="There are three X3D models: Coke, Sprite and Pepper">Models</a>
+          <a id="navModels" class="nav-link"  href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="X3D Models" data-content="There are four X3D models: Coke, Sprite, Pepper and Fanta">Models</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
@@ -85,7 +86,7 @@
 <!--row of cards on the grid-->
     <div class="row">
       <!--Coca cola column-->
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <div class="card">
           <a href="assets/images/gallery_images/coke_1.png" data-fancybox data-caption="My 3D Coke Can Render">
             <img class="card-img-top img-fluid img-thumbnail" src="assets/images/coca_cola.jpg" alt="Coca cola">
@@ -100,7 +101,7 @@
       </div>
 
       <!--Sprite column-->
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <div class="card">
           <a href="assets/images/gallery_images/sprite_1.png" data-fancybox data-caption="My 3D Sprite Bottle Render" class="img-narrow">            
           <img class="card-img-top img-fluid img-thumbnail" src="assets/images/sprite.jpg" alt="Sprite">
@@ -115,7 +116,7 @@
       </div>
 
       <!--Dr Pepper column-->
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <div class="card">
           <a href="assets/images/gallery_images/pepper_1.png" data-fancybox data-caption="My 3D Pepper Cup Render" class="thumbnail">
             <img class="card-img-top img-fluid img-thumbnail" src="assets/images/dr_pepper.jpg" alt="Dr Pepper">
@@ -129,7 +130,23 @@
         </div>
       </div>
     </div>
-    </div> <!--End home page-->
+    </div> 
+
+    <!--Fanta column-->
+    <div class="col-sm-3">
+      <div class="card">
+        <a href="assets/images/gallery_images/fanta_1.png" data-fancybox data-caption="My 3D Fanta Can Render">
+          <img class="card-img-top img-fluid img-thumbnail" src="assets/images/fanta.jpg" alt="Fanta">
+        </a>
+        <div class="card-body">
+          <div id="title_left" class="card-title drinksText"></div>
+          <div id="subTitle_left" class="card-subtitle drinksText"></div>
+          <div id="description_left" class="card-text drinksText"></div>   
+          <a href="https://www.coca-cola.co.uk/brands/fanta" class="btn btn-primary">Find out more</a>
+        </div>
+      </div>
+    </div>
+    <!--End home page-->
 
 <!--X3D models and 3D image gallery-->
 <div id="models">
@@ -149,6 +166,9 @@
                     <li class="nav-item">
                         <a id="navPepper" class="nav-link" href="#">Pepper</a>
                     </li>
+                    <li class="nav-item">
+                      <a id="navFanta" class="nav-link" href="#">Fanta</a>
+                  </li>
                 </ul>
             </div>
 
@@ -193,6 +213,20 @@
           </x3d>
         </div>
         <div id="x3dCreationMethod_pepper" class="card-text drinksText"></div>
+      </div>
+
+       <!-- Fanta X3D model -->
+ <div id="fanta" style="display: none;">
+  <div id="x3dModelTitle_fanta" class="card-title drinksText"></div>
+  <!--X3D code here-->
+        <div class="model3D">
+          <x3d>
+            <scene>
+              <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="assets/x3d/fanta.x3d"></inline>
+            </scene>
+          </x3d>
+        </div>
+        <div id="x3dCreationMethod_fanta" class="card-text drinksText"></div>
       </div>
       </div>
       </div>
@@ -240,13 +274,13 @@
             <div class="card-Title x3dCamera_Subtitle drinksText">
               <h3>Camera Views</h3>
             </div>                            
-            <a href="#" class="btn btn-success btn-responsive" onclick="cameraFront();">Default</a>
-            <a href="#" class="btn btn-primary btn-responsive" onclick="cameraBack();">Back</a>
+            <a href="#" class="btn btn-secondary btn-responsive" onclick="cameraFront();">Default</a>
+            <a href="#" class="btn btn-secondary btn-responsive" onclick="cameraBack();">Back</a>
             <a href="#" class="btn btn-secondary btn-responsive" onclick="cameraTop();">Top</a>
             <a href="#" class="btn btn-secondary btn-responsive" onclick="cameraBottom();">Bottom</a>
             <a href="#" class="btn btn-outline-dark disabled btn-responsive">Off</a>
             <div class="card-text x3dCameraDescription drinksText">
-              <p>These buttons select a limited range of X3D model viewpoints, use the dropdown menu for more camera views</p>
+              <p>These buttons are supposed to select a limited range of X3D model viewpoints.</p>
             </div>
           </div>
         </div>
@@ -268,7 +302,7 @@
             <a href="#" class="btn btn-outline-light btn-responsive" onclick="spin();">Spin</a>
             <a href="#" class="btn btn-outline-dark btn-responsive" onclick="stopRotation();">Stop</a>
             <div class="card-text x3dAnimationDescription drinksText">
-                <p>Click the button to spin the model.</p>
+                <p>Couldn't figure out the workflow to get my animation to work.</p>
             </div>
           </div>
         </div>
@@ -289,7 +323,7 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Lights</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">Default</a>
-                <a class="dropdown-item" href="#">Headlight On/Off</a>
+                <a class="dropdown-item" href="#" onclick="headlight();">Headlight On/Off</a>
               </div>
             </li>
           </ul>
@@ -298,12 +332,11 @@
           <div class="card-Title x3dRendersubtitle drinksText">
             <h3>Render and Lighting Options</h3>
           </div>
-          <a href="#" class="btn btn-success btn-responsive">Poly</a>
           <a href="#" class="btn btn-secondary btn-responsive" onclick="wireframe();">Wire</a>
           <a href="#" class="btn btn-success btn-responsive" onclick="headlight();">Headlight</a>
           <a href="#" class="btn btn-outline-dark btn-responsive">Default</a>
           <div class="card-text x3dRenderDescription drinksText">
-              <p>These buttons select a limited number of render and lighting options; use the dropdown menus for more options</p>
+              <p>These buttons select a limited number of render and lighting options.</p>
           </div>
         </div>
       </div>
@@ -351,6 +384,20 @@
         </div>
     </div>
 </div> <!-- End pepper description contents -->  
+
+<!-- Row to hold one card to hold the fanta descriptive text, etc.-->
+<div id="fantaDescription" class="row" >
+  <div class="col-sm-12">
+      <div class="card">
+          <div class="card-body">
+              <div id="title_fanta" class="card-title drinksText"></div>
+              <div id="subTitle_fanta" class="card-subtitle drinksText"></div>
+              <div id="description_fanta" class="card-text drinksText"></div>  
+              <a href="https://www.coca-cola.co.uk/brands/fanta" class="btn btn-primary btn-responisve">Visit Fanta.</a>                 
+          </div>
+      </div>
+  </div>
+</div> <!-- End fanta description contents -->
 
 </div>  <!-- End 3D App SPA Contents --> 
 
