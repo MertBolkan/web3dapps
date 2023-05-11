@@ -5,21 +5,21 @@ var spinning = false;
 function spin()
 {
 	spinning = !spinning;
-	document.getElementById('model__RotationTimer').setAttribute('enabled', spinning.toString());
+	document.getElementById('model_RotationTimer').setAttribute('enabled', spinning.toString());
 }
 
 function stopRotation()
 {
 	spinning = false;
-	document.getElementById('model__RotationTimer').setAttribute('enabled', spinning.toString());
+	document.getElementById('model_RotationTimer').setAttribute('enabled', spinning.toString());
 }
 
 function animateModel()
 {
-    if(document.getElementById('model__RotationTimer').getAttribute('enabled')!= 'true')
-        document.getElementById('model__RotationTimer').setAttribute('enabled', 'true');
+    if(document.getElementById('model_RotationTimer').getAttribute('enabled')!= 'true')
+        document.getElementById('model_RotationTimer').setAttribute('enabled', 'true');
     else
-        document.getElementById('model__RotationTimer').setAttribute('enabled', 'false');
+        document.getElementById('model_RotationTimer').setAttribute('enabled', 'false');
 }
 
 function wireframe()
@@ -34,7 +34,7 @@ var lightOn = true;
 function headlight()
 {
 	lightOn = !lightOn;
-	document.getElementById('headlight').setAttribute('headlight', lightOn.toString());
+	document.getElementById('model_headlight').setAttribute('headlight', lightOn.toString());
 }
 
 function cameraFront()

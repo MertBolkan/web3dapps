@@ -45,13 +45,20 @@ $(document).ready(function(){
        $('#subTitle_pepper').html('<h3>' + jsonObj.pageTextData[6].subTitle + '</h3>');
        $('#description_pepper').html('<p>' + jsonObj.pageTextData[6].description + '</p>');
        
+            //Get the fanta main text data
+            $('#x3dModelTitle_fanta').html('<h2>' + jsonObj.pageTextData[7].x3dModelTitle + '<h2>');
+            $('#x3dCreationMethod_fanta').html('<p>' + jsonObj.pageTextData[7].x3dCreationMethod + '<p>');
+             $('#title_fanta').html('<h2>' + jsonObj.pageTextData[7].title + '<h2>');
+            $('#subTitle_fanta').html('<h3>' + jsonObj.pageTextData[7].subTitle + '</h3>');
+            $('#description_fanta').html('<p>' + jsonObj.pageTextData[7].description + '</p>');
+
        //Get the gallery contents data
-       $('.title_gallery').html('<h2>' + jsonObj.pageTextData[7].galleryTitle + '<h2>');
-       $('.description_gallery').html('<p>' + jsonObj.pageTextData[7].galleryDescription + '</p>');
+       $('.title_gallery').html('<h2>' + jsonObj.pageTextData[8].galleryTitle + '<h2>');
+       $('.description_gallery').html('<p>' + jsonObj.pageTextData[8].galleryDescription + '</p>');
 
        //Get camera contents data
-       $('.x3dCameraTitle').html('<h2>' + jsonObj.pageTextData[8].CameraTitle + '<h2>');
-       $('.x3dCameraSubtitle').html('<p>' + jsonObj.pageTextData[8].CameraSubtitle + '<p');
+       $('.x3dCameraTitle').html('<h2>' + jsonObj.pageTextData[9].CameraTitle + '<h2>');
+       $('.x3dCameraSubtitle').html('<p>' + jsonObj.pageTextData[9].CameraSubtitle + '</p>');
 
     });
 });
